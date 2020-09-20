@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/ranJokes">Random Joke</a>
+        <a href="/favJokes">favJokes</a>
+    </nav>
+    <% data.forEach(item=>{ %>
+    <div class="flex">
+        <p> <%= item.id %></p>
+        <p> <%= item.type %></p>
+        <p> <%= item.setup %></p>
+        <p> <%= item.punchline %></p>
+    </div>
+
+    <% })%>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+DROP TABLE test3;
+CREATE TABLE IF NOT EXISTS test3(
+    idp SERIAL PRIMARY KEY,
+    id VARCHAR(255),
+    type VARCHAR(255),
+    setup VARCHAR(255),
+    punchline VARCHAR(255)
+);
